@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 20px;
+        }
+        
+    nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+       
+         
+    }
+    nav ul li{
+        padding: 10px;
+        margin: 10px;
+        transition: transform 0.3s;
+    }
+    nav ul li:hover{
+        transform: scale(1.1);
+    }
+    nav{
+        background-color: gray;
+        height: 50px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+         
+    }
+    .tover{
+        display: flex;
+    }
+    .idgaf{
+        height: 200px;
+        width: 400px;
+    }
+    a{
+     text-decoration: none;
+     color: white;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    #kotak{
+        display: grid;
+        grid-template-areas:
+        "im1 im2 im3 im3"
+        "p1 p2 p3 p4"
+        "n1 n2 n3 n4" ;
+    }
+    .im1{
+        height: 200px;
+        width: 150;
+    }
+    .im2{
+        height: 200px;
+        width: 150;
+    }
+    .im3{
+        height: 200px;
+        width: 150;
+    }
+    .im4{
+        height: 200px;
+        width: 150;
+    }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="#Onas">О нас</a></li>
+                <li><a href="#tovary">Товары</a></li>
+                <li><a href="#kotak">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="Onas">
+        <h1>О нас</h1>
+        <div>
+            <h3 class="block">💊 Широкий ассортимент</h3>
+            <p>В нашем каталоге представлены проверенные лекарства, витамины, медицинские изделия, средства гигиены и товары для всей семьи.</p>
+        </div>
+        <div>
+            <h3 class="block">🩺 Профессиональные услуги</h3>
+            <p>Мы предлагаем консультации специалистов, помощь в подборе препаратов и актуальную информацию о применении товаров.</p>
+        </div>
+        <div>
+            <h3 class="block">📍 Удобство и доступность</h3>
+            <p>Вы можете легко найти нужный товар, узнать его наличие и ознакомиться с ценами прямо на сайте.</p>
+        </div>
+        <div>
+            <h3 class="block">📞 Контакты и поддержка</h3>
+            <p>Свяжитесь с нами любым удобным способом — мы всегда готовы ответить на ваши вопросы и помочь вам.</p>
+        </div>
+        </div>
+        <p>_____________________________________________________________________________________________________________________________________________________</p>
+        <div id="tovary">
+            <div class="tover">
+            <img class="idgaf" src="img/askorbin.jpg" alt=""><button>Купить</button>
+            <img class="idgaf" src="img/asperin.jpg" alt=""><button>Купить</button>
+            <img class="idgaf" src="img/citramon.png" alt=""><button>Купить</button>
+            
+        </div>
+        <div class="tover">
+            <img class="idgaf" src="img/omega3.jpg" alt=""><button>Купить</button>
+            <img class="idgaf" src="img/paracetamol-200.jpg" alt=""><button>Купить</button>
+            <img class="idgaf" src="img/protivozaxhat.webp" alt=""><button>Купить</button>
+        </div>
+        </div>
+        <br>
+        <br>
+        <p>_____________________________________________________________________________________________________________________________________________________</p>
+
+        <div id="kotak">
+            
+                <img class="im1" src="img/images (1).jpg" alt="">
+                <img class="im2" src="img/images (2).jpg" alt="">
+                <img class="im3" src="img/images (3).jpg" alt="">
+                <img class="im4" src="img/images.jpg" alt="">
+            
+            <p class="p1">Директор</p>
+            <p class="p2">Правител</p>
+            <p class="p3">Охранник</p>
+            <p class="p4">Уборщикк</p>
+            <p class="n1">+7 777 777 77-77</p>
+            <p class="n2">+7 777 777 77-77</p>
+            <p class="n3">+7 777 777 77-77</p>
+            <p class="n4">+7 777 777 77-77</p>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

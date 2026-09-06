@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            background-color: cornflowerblue;
+        }
+        .zagolovok{
+            background-color: rgb(62, 62, 62);
+            display: block;
+            color: white;
+            margin: 0;
+        }
+        .down{
+            background-color: rgb(216, 48, 180);
+            color: white;
+            margin-top: 1px;
+        }
+        .div{
+            display: inline;
+        }
+        .con{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            gap: 120px;
+            margin-top: 170px;
+        }
+        .box{
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: deeppink;
+            font-size: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .Y{
+            animation: bounce 3s infinite;
+
+        }
+        @keyframes bounce{
+            0% ,20% ,50% ,80% ,100% {
+                transform: translateY(0);
+            }
+            40%{transform: translateY(-150px);}
+            60%{transform: translateY(-75px);}
+        }
+        .X{
+            animation: slide 3s infinite;
+        }
+        @keyframes slide{
+            0%{transform: translateX(0);}
+            50%{transform: translateX(200px);}
+            100%{transform: translateX(0);}
+        }
+        .inv{
+            animation: fade 3s infinite;
+        }
+        @keyframes fade{
+            0%{opacity: 1;}
+            50%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+        .mash{
+            animation: mash 3s infinite;
+        }
+        @keyframes mash{
+            0%{transform: scale(1);}
+            50%{transform: scale(1.2);}
+            100%{transform: scale(1);}
+        }
+        @media(max-width:600px){
+            .con{
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+            margin-top: 60px;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            
+            justify-content: center;
+            align-items: center;
+            background-color: deeppink;
+            font-size: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .Y{
+            animation: bounce 3s infinite;
+
+        }
+        @keyframes bounce{
+            0% ,20% ,50% ,80% ,100% {
+                transform: translateY(0);
+            }
+            40%{transform: translateY(-50px);}
+            60%{transform: translateY(-25px);}
+        }
+        .X{
+            animation: slide 3s infinite;
+        }
+        @keyframes slide{
+            0%{transform: translateX(0);}
+            50%{transform: translateX(75px);}
+            100%{transform: translateX(0);}
+        }
+        .inv{
+            animation: fade 3s infinite;
+        }
+        @keyframes fade{
+            0%{opacity: 1;}
+            50%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+        .mash{
+            animation: mash 3s infinite;
+        }
+        @keyframes mash{
+            0%{transform: scale(1);}
+            50%{transform: scale(1.1);}
+            100%{transform: scale(1);}
+        }
+        }
+        @media(max-width:1023px){
+            .con{
+            
+            align-items: center;
+            gap: 90px;
+            margin-top: 90px;
+        }
+        .box{
+            width: 240px;
+            height: 240px;
+            
+            justify-content: center;
+            align-items: center;
+            background-color: deeppink;
+            font-size: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .Y{
+            animation: bounce 3s infinite;
+
+        }
+        @keyframes bounce{
+            0% ,20% ,50% ,80% ,100% {
+                transform: translateY(0);
+            }
+            40%{transform: translateY(-120px);}
+            60%{transform: translateY(-60px);}
+        }
+        .X{
+            animation: slide 3s infinite;
+        }
+        @keyframes slide{
+            0%{transform: translateX(0);}
+            50%{transform: translateX(85px);}
+            100%{transform: translateX(0);}
+        }
+        .inv{
+            animation: fade 3s infinite;
+        }
+        @keyframes fade{
+            0%{opacity: 1;}
+            50%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+        .mash{
+            animation: mash 3s infinite;
+        }
+        @keyframes mash{
+            0%{transform: scale(1);}
+            50%{transform: scale(1.2);}
+            100%{transform: scale(1);}
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+  <div class="zagolovok">
+    <h1>Добро пожаловать на сайт</h1>
+    <p>Тут вы увидите примеры анимаций</p>
+  </div>
+  <div class="down">
+    <h1>СНизу анимации</h1>
+  </div>
+  <div class="con">
+  <div class="box Y">Движение Y</div>
+  <div class="box X">Движение X</div>
+  <div class="box inv">Исчезновение</div>
+  <div class="box mash">Масшатабирование</div>
+</div>
+</main>
+</body>
+</html>
